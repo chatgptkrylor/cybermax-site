@@ -53,10 +53,10 @@
 .table-wrapper .row:nth-child(even) {background-color: #f1f1f1; }
 .table-wrapper .table-cell {padding-bottom: 44px;}
 .table-wrapper .table-cell--header {padding-left: 60px;}
-.table-wrapper:before { left: -107px; background-image: url(/images/table-wrapper-left.png); position: absolute; display: block; width: 92px; height: 100%; background-repeat: no-repeat; background-position: 0 50%; background-size: 100% 100%; top: 0; content: ''; }
-.table-wrapper:after { right: -107px; background-image: url(/images/table-wrapper-right.png); position: absolute; display: block; width: 92px; height: 100%; background-repeat: no-repeat; background-position: 0 50%; background-size: 100% 100%; top: 0; content: ''; box-sizing: border-box; }
+.table-wrapper:before { left: -107px; background-image: url(../images/table-wrapper-left.png); position: absolute; display: block; width: 92px; height: 100%; background-repeat: no-repeat; background-position: 0 50%; background-size: 100% 100%; top: 0; content: ''; }
+.table-wrapper:after { right: -107px; background-image: url(../images/table-wrapper-right.png); position: absolute; display: block; width: 92px; height: 100%; background-repeat: no-repeat; background-position: 0 50%; background-size: 100% 100%; top: 0; content: ''; box-sizing: border-box; }
 .table-wrapper .table-cell { position: relative; padding-top: 20px; padding-bottom: 20px; display: inline-block; vertical-align: middle; float: none; margin-right: -4px; text-align:left;	 }
-.table-wrapper h3:after { content: ''; position: absolute; display: block; width: 20px; height: 100%; top: 0; right: -20px; background-repeat: no-repeat; background-position: 0 50%; background-image: url(/images/table-cell-header-after.png); background-size: 100% 100%; }
+.table-wrapper h3:after { content: ''; position: absolute; display: block; width: 20px; height: 100%; top: 0; right: -20px; background-repeat: no-repeat; background-position: 0 50%; background-image: url(../images/table-cell-header-after.png); background-size: 100% 100%; }
 .table-cell .txtbox{font-size:17px; line-height:25px; font-weight:300;}
 @media screen and (max-width: 1024px){
 .col-sm-3{float:none; width:100%;}

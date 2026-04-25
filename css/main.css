@@ -170,7 +170,7 @@ font-size: 17px;
 .blog-content table td{padding-bottom:20px; border-bottom: 1px solid #e0e0e0; border-right: 1px solid #e0e0e0; padding:10px;}
 .blog-content table{border: 1px solid #e0e0e0; padding-bottom:30px!important;}
 .blog-content .bullet{padding-bottom:30px;}
-.blog-content .bullet li{background-image:url(/images/checkmark.png); background-repeat:no-repeat; display:block; padding-left:25px; background-position:0px 8px; text-align:left; font-size:17px;}
+.blog-content .bullet li{background-image:url(../images/checkmark.png); background-repeat:no-repeat; display:block; padding-left:25px; background-position:0px 8px; text-align:left; font-size:17px;}
 
 .blog .jumbotron{margin-top:75px;}
 .blog .jumbotron .title {
@@ -236,9 +236,9 @@ font-size: 17px;
 	.greentopbox .text{padding:0 5px 5px 5px; font-size:17px; font-weight:400;}
 	
 	
-	.checkmark{background-image:url(/images/checkmark.png); background-repeat:no-repeat; display:block; padding-left:25px; /*padding-bottom:20px;*/ padding-bottom:10px; background-position:0px 8px; text-align:left; font-size:17px; font-weight:400;}
+	.checkmark{background-image:url(../images/checkmark.png); background-repeat:no-repeat; display:block; padding-left:25px; /*padding-bottom:20px;*/ padding-bottom:10px; background-position:0px 8px; text-align:left; font-size:17px; font-weight:400;}
 	
-	.checkmark_white{background-image:url(/images/checkmark_white.png); background-repeat:no-repeat; display:block; padding-left:25px; padding-bottom:20px; background-position:0px 8px; text-align:left;}
+	.checkmark_white{background-image:url(../images/checkmark_white.png); background-repeat:no-repeat; display:block; padding-left:25px; padding-bottom:20px; background-position:0px 8px; text-align:left;}
 	
 	.bottom-border{border-bottom:1px solid #f4f4f4; width:100%; height:1px; margin:0;}
 	
@@ -276,7 +276,7 @@ font-size: 17px;
 	.boxmain h4{margin-top:0; margin-bottom:22x; font-weight:500; text-transform:uppercase; font-size:24px; line-height:32px;}
 	.boxmain .text{font-size:17px; line-height:25px; font-weight:400;}
 	
-	.boxmain ul li{background-image:url(/images/bullet_green.png); background-repeat:no-repeat; display:block; padding-left:20px; padding-bottom:5px; background-position:7px 10px; font-size:17px; line-height:25px; font-weight:400; text-align:left;}
+	.boxmain ul li{background-image:url(../images/bullet_green.png); background-repeat:no-repeat; display:block; padding-left:20px; padding-bottom:5px; background-position:7px 10px; font-size:17px; line-height:25px; font-weight:400; text-align:left;}
 	
 	.boxmain2{border-top:5px solid #03abf8; background-color:#fff; padding:25px; margin-bottom:30px; border-bottom:1px solid #DCDCDC; border-left:1px solid #DCDCDC; border-right:1px solid #DCDCDC;}
 	.boxmain2 h4{margin-top:0; margin-bottom:22x; font-weight:500; text-transform:uppercase; font-size:24px; line-height:32px;}
@@ -327,11 +327,11 @@ font-size: 17px;
 	.logolist{/*float:left;*/ width:240px; display:inline-block;}
 
 /**** JAVA PAGE ****/
-	.javabg1{background-image:url(/images/bg/bg_java1.jpg); background-position:50% 50%; background-repeat:no-repeat; padding-top:100px; padding-bottom:100px;}
-	.javabg2{background-image:url(/images/bg/bg_java2.jpg); background-position:50% 50%; background-repeat:no-repeat;}
+	.javabg1{background-image:url(../images/bg/bg_java1.jpg); background-position:50% 50%; background-repeat:no-repeat; padding-top:100px; padding-bottom:100px;}
+	.javabg2{background-image:url(../images/bg/bg_java2.jpg); background-position:50% 50%; background-repeat:no-repeat;}
 
 /**** PHP PAGE ****/
-	.phpabg1{background-image:url(/images/bg/bg_php1.jpg); background-position:50% 50%; background-repeat:no-repeat;}
+	.phpabg1{background-image:url(../images/bg/bg_php1.jpg); background-position:50% 50%; background-repeat:no-repeat;}
 	.phpabg1 .infobox{padding:30px; background:rgba(0,0,0,.65); border-radius:10px; margin:0 30px 75px 30px;}
 	.phpabg1 .infobox2{padding:5px; background:rgba(0,0,0,.65); border-radius:10px; margin:5% 2% 20px;}
 	.phpabg1 .infobox2 h3{padding-bottom:0px;}
@@ -340,21 +340,21 @@ font-size: 17px;
 
 
 /**** CLOUD PAGE ****/
-	.cloudbg1{background:linear-gradient(rgba(0, 0 ,0 , .6), rgba(0, 0 ,0 , .6)), url("/images/bg/bg_cloud1.jpg"); background-position:50% 50%; background-repeat:no-repeat; /*background-size: auto 100%;*/}
+	.cloudbg1{background:linear-gradient(rgba(0, 0 ,0 , .6), rgba(0, 0 ,0 , .6)), url("../images/bg/bg_cloud1.jpg"); background-position:50% 50%; background-repeat:no-repeat; /*background-size: auto 100%;*/}
 	.cloudbg1 h4{font-size:18px; font-weight:500; text-transform:capitalize;}
 	.cloudbenefit_bullets{padding-top:30px; text-align:left; font-size:14px; font-weight:600;}
 	.iconbox{padding:5px; background:rgba(0,0,0,.4); border-radius:100px;}
-	.zoom_private{padding:20px; background-image:url(/images/bg/bg_cloud2.jpg); transition:transform .9s; height:700px; margin:0 auto;}
+	.zoom_private{padding:20px; background-image:url(../images/bg/bg_cloud2.jpg); transition:transform .9s; height:700px; margin:0 auto;}
 	.zoom_hybrid:hover{ }
 	.zoom_private .zoomtext{display:none; font-size:17px; line-height:30px; font-weight:600; color:#000;}
 	.zoom_private:hover .zoomtext{display:block; position:relative;animation:animatetop 0.7s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
 	.zoom_private h4{font-weight:600; color:#000;}
-	.zoom_hybrid{padding:20px; background-image:url(/images/bg/bg_cloud3.jpg); transition:transform .9s; height:700px; margin:0 auto;}
+	.zoom_hybrid{padding:20px; background-image:url(../images/bg/bg_cloud3.jpg); transition:transform .9s; height:700px; margin:0 auto;}
 	.zoom_hybrid:hover{}
 	.zoom_hybrid .zoomtext{display:none; font-size:17px; line-height:30px; font-weight:600; color:#000;}
 	.zoom_hybrid:hover .zoomtext{display:block; position:relative;animation:animatetop 0.7s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
 	.zoom_hybrid h4{font-weight:600; color:#000;}
-	.zoom_public{padding:20px; background-image:url(/images/bg/bg_cloud4.jpg); transition:transform .9s; height:700px; margin:0 auto;}
+	.zoom_public{padding:20px; background-image:url(../images/bg/bg_cloud4.jpg); transition:transform .9s; height:700px; margin:0 auto;}
 	.zoom_public:hover{}
 	.zoom_public .zoomtext{display:none; font-size:17px; line-height:30px; font-weight:600; color:#000;}
 	.zoom_public:hover .zoomtext{display:block; position:relative;animation:animatetop 0.7s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
@@ -363,7 +363,7 @@ font-size: 17px;
 
 /**** BACKEND PAGE ****/
 	.spacetopbot{padding-top:65px; padding-bottom:55px;}
-	.backendbg1{background-image:url(/images/bg/bg_backend1.jpg); background-position:50% 50%; background-repeat:no-repeat;}
+	.backendbg1{background-image:url(../images/bg/bg_backend1.jpg); background-position:50% 50%; background-repeat:no-repeat;}
 	.backendbg1 .infobox{padding:30px; background:rgba(0,0,0,.4); border-radius:10px; margin:0 30px 75px 30px;}
 	.backendbg1 .infobox2{padding:5px; background:rgba(0,0,0,.4); border-radius:10px; margin:5% 2% 20px;}
 	.backendbg1 .infobox h4{border-bottom:2px #daa520 solid; text-align:left; padding-bottom:15px;}
@@ -371,13 +371,13 @@ font-size: 17px;
 
 
 /**** DEVELOPMENT METHODOLOGY PAGE ****/
-	.waterfallbg{background-image:url(/images/bg/bg_waterfall.jpg); background-position:50% 50%; background-repeat:no-repeat;}
+	.waterfallbg{background-image:url(../images/bg/bg_waterfall.jpg); background-position:50% 50%; background-repeat:no-repeat;}
 	.waterfallbg .infobox{padding:30px; background:rgba(0,0,0,.4); border-radius:10px; margin:0 30px 75px 30px;}
 	.waterfallbg .infobox2{padding:5px; background:rgba(0,0,0,.4); border-radius:10px; margin:5% 2% 20px;}
 	.waterfallbg .infobox h4{border-bottom:2px #daa520 solid; text-align:left; padding-bottom:15px;}
 	.waterfallbg .infobox .description5{text-align:left; padding-left:0; width:100%; margin-bottom:0;}
 	
-	.iterativebg{background-image:url(/images/bg/bg_iterative.jpg); background-position:50% 50%; background-repeat:no-repeat;}
+	.iterativebg{background-image:url(../images/bg/bg_iterative.jpg); background-position:50% 50%; background-repeat:no-repeat;}
 	.iterativebg .infobox{padding:30px; background:rgba(0,0,0,.4); border-radius:10px; margin:0 30px 75px 30px;}
 	.iterativebg .infobox2{padding:5px; background:rgba(0,0,0,.4); border-radius:10px; margin:5% 2% 20px;}
 	.iterativebg .infobox h4{border-bottom:2px #daa520 solid; text-align:left; padding-bottom:15px;}
@@ -385,20 +385,20 @@ font-size: 17px;
 
 
 /**** WEB APPLICATION DEVELOPMENT PAGE ****/
-	.webappdevbg{background-image:url(/images/bg/bg_webapp.jpg); background-position:50% 50%; background-repeat:no-repeat;}
+	.webappdevbg{background-image:url(../images/bg/bg_webapp.jpg); background-position:50% 50%; background-repeat:no-repeat;}
 	.webappdevbg .infobox{padding:30px; background:rgba(0,0,0,.65); border-radius:10px; margin:0 30px 75px 30px;}
 	.webappdevbg .infobox2{padding:15px; background:rgba(0,0,0,.50); border-radius:10px; margin:5% 2% 20px; color:#fff;}
 	.webappdevbg h3{padding-bottom:0px; color:#fff!important;}
 
 /**** OUTSOURCE PAGE ****/	
-	.outsource1{background-image:url(/images/bg/bg_outsource.jpg); background-position:50% 50%; background-repeat:no-repeat;}
+	.outsource1{background-image:url(../images/bg/bg_outsource.jpg); background-position:50% 50%; background-repeat:no-repeat;}
 	.outsource1 .infobox{padding:30px; background:rgba(0,0,0,.7); border-radius:10px; margin:0 30px 75px 30px;}
 	.outsource1 .infobox2{background:rgba(0,0,0,.4); border-radius:10px; margin:5% 2% 20px;}
 	.outsource1 .infobox h4{border-bottom:2px #daa520 solid; text-align:left; padding-bottom:15px;}
 	.outsource1 .infobox .description5{text-align:left; padding-left:0; width:100%; margin-bottom:0;}
 	
 /**** PAYMENT GATEWAY PAGE ****/	
-	.paymentgateway{background-image:url(/images/bg/payment_gateway.jpg); background-position:50% 50%; background-repeat:no-repeat; margin-bottom:75px;}
+	.paymentgateway{background-image:url(../images/bg/payment_gateway.jpg); background-position:50% 50%; background-repeat:no-repeat; margin-bottom:75px;}
 	.paymentgateway .infobox{padding:30px; background:rgba(0,0,0,.65); border-radius:10px; margin:0 30px 75px 30px;}
 	.paymentgateway .infobox2{background:rgba(0,0,0,.5); border-radius:10px; margin:5% 2% 20px;}
 	.paymentgateway .infobox h4{border-bottom:2px #daa520 solid; text-align:left; padding-bottom:15px;}
@@ -436,14 +436,14 @@ font-size: 17px;
 	h3{font-size:26px; line-height:50px; margin:0; font-weight:600; text-align:center;}
 	h4{margin-top:0; margin-bottom:20px; font-weight:400; font-size:26px; line-height:30px; } 
 	
-	.javabg1{background-image:url(/images/bg/bg_java1.jpg); background-position:0% 50%!important; background-repeat:no-repeat; background-size: auto 100%; padding-top:100px; padding-bottom:100px;}
+	.javabg1{background-image:url(../images/bg/bg_java1.jpg); background-position:0% 50%!important; background-repeat:no-repeat; background-size: auto 100%; padding-top:100px; padding-bottom:100px;}
 	.javapagesm6-2 .black{color:#fff;}
 	
-	.backendbg1{background-image:url(/images/bg/bg_backend1.jpg); background-position:0% 50%; background-repeat:no-repeat; background-size: auto 100%;}
+	.backendbg1{background-image:url(../images/bg/bg_backend1.jpg); background-position:0% 50%; background-repeat:no-repeat; background-size: auto 100%;}
 	
-	.waterfallbg{background-image:url(/images/bg/bg_waterfall.jpg); background-position:0% 50%; background-repeat:no-repeat; background-size: auto 100%;}
-	.iterativebg{background-image:url(/images/bg/bg_iterative.jpg); background-position:0% 50%; background-repeat:no-repeat; background-size: auto 100%;}
-	.outsource{background-image:url(/images/bg/bg_outsource.jpg); background-position:0% 50%; background-repeat:no-repeat; background-size: auto 100%;}
+	.waterfallbg{background-image:url(../images/bg/bg_waterfall.jpg); background-position:0% 50%; background-repeat:no-repeat; background-size: auto 100%;}
+	.iterativebg{background-image:url(../images/bg/bg_iterative.jpg); background-position:0% 50%; background-repeat:no-repeat; background-size: auto 100%;}
+	.outsource{background-image:url(../images/bg/bg_outsource.jpg); background-position:0% 50%; background-repeat:no-repeat; background-size: auto 100%;}
 }
 
 @media (max-width:767px) {
@@ -493,28 +493,28 @@ font-size: 17px;
 	.navbar-brand > img{padding-left:0px;}
 
 /**** JAVA PAGE ****/
-	.javabg1{background-image:url(/images/bg/bg_java1.jpg); background-position:0% 50%!important; background-repeat:no-repeat; background-size: auto 100%;}
-	.javabg2{background-image:url(/images/bg/bg_java2.jpg); background-position:0% 50%; background-repeat:no-repeat; background-size: auto 100%;}
+	.javabg1{background-image:url(../images/bg/bg_java1.jpg); background-position:0% 50%!important; background-repeat:no-repeat; background-size: auto 100%;}
+	.javabg2{background-image:url(../images/bg/bg_java2.jpg); background-position:0% 50%; background-repeat:no-repeat; background-size: auto 100%;}
 	
 /**** PHP PAGE ****/
-	.phpabg1{background-image:url(/images/bg/bg_php1.jpg); background-position:0% 50%; background-repeat:no-repeat; background-size: auto 100%;}
+	.phpabg1{background-image:url(../images/bg/bg_php1.jpg); background-position:0% 50%; background-repeat:no-repeat; background-size: auto 100%;}
 	
 	
 /**** BACKEND PAGE ****/
-	.backendbg1{background-image:url(/images/bg/bg_backend1.jpg); background-position:0% 50%; background-repeat:no-repeat; background-size: auto 100%;}
+	.backendbg1{background-image:url(../images/bg/bg_backend1.jpg); background-position:0% 50%; background-repeat:no-repeat; background-size: auto 100%;}
 
 /**** DEVELOPMENT METHODOLOGY PAGE ****/
-	.waterfallbg{background-image:url(/images/bg/bg_waterfall.jpg); background-position:0% 50%; background-repeat:no-repeat; background-size: auto 100%;}
-	.iterativebg{background-image:url(/images/bg/bg_iterative.jpg); background-position:0% 50%; background-repeat:no-repeat; background-size: auto 100%;}
+	.waterfallbg{background-image:url(../images/bg/bg_waterfall.jpg); background-position:0% 50%; background-repeat:no-repeat; background-size: auto 100%;}
+	.iterativebg{background-image:url(../images/bg/bg_iterative.jpg); background-position:0% 50%; background-repeat:no-repeat; background-size: auto 100%;}
 
 /**** WEB APPLICATION DEVELOPMENT PAGE ****/
-	.webappdevbg{background-image:url(/images/bg/bg_webapp.jpg); background-position:0% 50%; background-repeat:no-repeat; background-size: auto 100%;}
+	.webappdevbg{background-image:url(../images/bg/bg_webapp.jpg); background-position:0% 50%; background-repeat:no-repeat; background-size: auto 100%;}
 	
 	/**** OUTSOURCE PAGE ****/
-	.outsource1 {background-image:url(/images/bg/bg_outsource.jpg); background-position:0% 50%; background-repeat:no-repeat; background-size: auto 100%;}
+	.outsource1 {background-image:url(../images/bg/bg_outsource.jpg); background-position:0% 50%; background-repeat:no-repeat; background-size: auto 100%;}
 	
 	/**** CLOUD PAGE ****/
-	.cloudbg1{background:linear-gradient(rgba(0, 0 ,0 , .6), rgba(0, 0 ,0 , .6)), url('/images/bg/bg_cloud1.jpg'); background-position:0% 50%; background-repeat:no-repeat; background-size: auto 100%;}
+	.cloudbg1{background:linear-gradient(rgba(0, 0 ,0 , .6), rgba(0, 0 ,0 , .6)), url('../images/bg/bg_cloud1.jpg'); background-position:0% 50%; background-repeat:no-repeat; background-size: auto 100%;}
 	.zoom_private .zoomtext{display:block; font-size:17px; line-height:30px; font-weight:600; color:#000;}
 	.zoom_hybrid .zoomtext{display:block; font-size:17px; line-height:30px; font-weight:600; color:#000;}
 	.zoom_public .zoomtext{display:block; font-size:17px; line-height:30px; font-weight:600; color:#000;}	
@@ -522,9 +522,9 @@ font-size: 17px;
 
 @media (max-width:480px) {
 /**** JAVA PAGE ****/
-	.javabg1{background-image:url(/images/bg/bg_java1.jpg); background-position:0% 50%!important; background-repeat:no-repeat; background-size: auto 100%;}
-	.javabg2{background-image:url(/images/bg/bg_java2.jpg); background-position:0% 50%; background-repeat:no-repeat; background-size: auto 100%;}
-	.paymentgateway{background-image:url(/images/bg/payment_gateway.jpg); background-position:0% 50%; background-repeat:no-repeat; background-size: auto 100%;}
+	.javabg1{background-image:url(../images/bg/bg_java1.jpg); background-position:0% 50%!important; background-repeat:no-repeat; background-size: auto 100%;}
+	.javabg2{background-image:url(../images/bg/bg_java2.jpg); background-position:0% 50%; background-repeat:no-repeat; background-size: auto 100%;}
+	.paymentgateway{background-image:url(../images/bg/payment_gateway.jpg); background-position:0% 50%; background-repeat:no-repeat; background-size: auto 100%;}
 	.jumbotron .title {padding-top:70px!important;  padding-bottom:40px; min-height:auto;}	
 	.greenpatch{background-color:#5bca3d; padding-top:25px; padding-bottom:25px; color:#fff;}
 	.greenpatch h4{font-weight:400; font-size:80px; line-height:100px; white-space:nowrap; margin-bottom:0;}
@@ -729,7 +729,7 @@ font-size: 17px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.scrollbox ul li{background-image:url(/images/checkmark.png); background-repeat:no-repeat; display:block; padding-left:25px; padding-bottom:7px; background-position:0px 8px; text-align:left; font-size:17px; font-weight:400;}
+.scrollbox ul li{background-image:url(../images/checkmark.png); background-repeat:no-repeat; display:block; padding-left:25px; padding-bottom:7px; background-position:0px 8px; text-align:left; font-size:17px; font-weight:400;}
 
 /* Tablet styles */
 @media (max-width: 992px) {
@@ -830,7 +830,7 @@ font-size: 17px;
 }
 
 
-.c2a-services{background:#03abf8; background-image:url(/images/cta.png); padding:75px; margin:auto}
+.c2a-services{background:#03abf8; background-image:url(../images/cta.png); padding:75px; margin:auto}
 .c2a-services h2{font-weight:600; color:#ffffff; padding-bottom:20px;}
 .c2a-services p{font-weight:600; color:#ffffff; text-align:center; padding-bottom:40px;}
 .c2a-services .c2a-button-wrapper{text-align:center;}
