@@ -1,0 +1,124 @@
+.jumbotron .title-big {
+    padding-top:190px;
+    padding-bottom:170px;
+    color:#FFF;
+    text-align:center;
+    text-shadow:0 0 15px rgba(0,0,0,.7);
+    background-position:50% 0;
+    background-size:cover;
+    background-color:#3D3C42;
+	position:relative;
+	background-repeat:no-repeat;
+}
+.jumbotron .title-big h1{padding-left:0px; padding-right:0px; line-height:90px;}
+.hp_description {line-height:35px; font-weight:500; text-align:center; font-size:24px; margin-bottom:50px;}
+.hp_description2 {line-height:35px; font-weight:500; text-align:center; font-size:24px; margin-bottom:100px; padding:0px 125px;}
+.hp_description3 {line-height:45px; font-weight:500; text-align:center; font-size:24px; padding:150px 180px; color:#fff;}
+.hp_description4 {line-height:45px; font-weight:500; text-align:center; font-size:24px; margin-bottom:40px; padding:0px 90px;}
+.hpbox {    
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    background: #fcfcfc;
+	border-bottom:1px solid #ddd;
+    box-sizing: border-box;
+	text-align:center;
+	color:#484848;
+}
+.hpbox:hover{
+	background:#03abf8; 
+	color:#fff;
+	-webkit-transition: background-color 2s ease-out;
+	-moz-transition: background-color 2s ease-out;
+	-o-transition: background-color 2s ease-out;
+	transition: background-color 2s ease-out;
+}
+.hpbox .boxinner{padding:76px 20px 80px;}
+.hpbox .hp_icon{padding-bottom:10px;}
+.hpbox .hpboxhead{font-size:30px; line-height:40px; margin-top:0; margin-bottom:13px; font-weight:300; text-transform:uppercase; font-weight:400;}
+.hpbox .hpboxtext{font-size:17px; line-height:30px; font-weight:300; font-weight:300;}
+
+.customer h3{padding:0px 125px; margin-bottom:30px;}
+
+.hpbox:hover svg #svgicon { 
+  fill: #fff;
+  -webkit-transition: background-color 2s ease-out;
+	-moz-transition: background-color 2s ease-out;
+	-o-transition: background-color 2s ease-out;
+	transition: background-color 2s ease-out;
+}
+
+.hpbg3{background-image:url(../images/bg/hpbg3.jpg); background-position:50% 50%; background-repeat:no-repeat;}
+.hpbg3 .infobox2{padding:5px; background:rgba(0,0,0,.65); border-radius:10px; margin:140px 180px;}
+.hpbg3 .infobox2 .infotext{line-height:45px; font-weight:500; text-align:center; font-size:24px!important; padding:25px; color:#fff;}
+
+.name{font-size:20px;}
+
+.company_logos{}
+.company_logos .item{ /* float:left; margin-right:50px; */ display:inline-block; cursor:all-scroll; -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);}
+
+.imagelist ul {margin:0; padding:0;}
+.imagelist ul li {width:250px; height:250px; list-style:none;}
+.imagelist ul li .outerbox {background-color:#fff; width:100%; height:100%;	text-align:center; vertical-align:middle; -webkit-box-shadow:1px 1px 5px rgba(0, 0, 0, .2);	box-shadow:1px 1px 5px rgba(0, 0, 0, .2); border:2px solid #fff;}
+.imagelist ul li .outerbox:hover {border:2px solid #00ccff;	width:100%;	height:100%;}
+.imagelist ul li .outerbox .middle {padding-top:70px;}
+.imagelist ul li .outerbox .middle img {
+ transition: filter .5s ease-in-out;
+	-webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+	filter: grayscale(100%); /* FF 35+ */
+}
+.imagelist:hover ul li .outerbox .middle img {
+	-webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+	filter: grayscale(0%); /* FF 35+ */
+}
+.Table {display:table;}
+.Row {display:table-row;}
+.Cell {display:table-cell; padding-left:10px; padding-right:10px; padding-bottom:20px;}
+
+.hp-ai-cases-box {
+    border-top: 10px solid #03abf8;
+    background-color: #e1f2ff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #03abf8;
+    border-left: 1px solid #03abf8;
+    border-right: 1px solid #03abf8;
+	color:#484848;
+}
+
+@media (max-width: 768px) {
+.imagelist ul li {width:100%; list-style:none;}
+.Cell {width:250px; padding-bottom:20px;}
+.mb20 {margin-bottom:0px;}
+}
+
+
+@media (max-width: 1024px) {
+.col-sm-4{float:none; width:100%}
+.jumbotron .title-big{padding-top:100px; padding-bottom:20px;}
+.customer h3{padding:0px;}
+.hp_description2{padding:0px;}
+.hp_description4{padding:0px;}
+.hp_description3{padding:0px}
+
+.hpbg3{background-image:url(../images/bg/hpbg3.jpg); background-position:0% 50%; background-repeat:no-repeat;}
+.hpbg3 .infobox2{padding:5px; background:rgba(0,0,0,.65); border-radius:10px; margin:20px;}
+.hpbg3 .infobox2 .infotext{line-height:40px; font-weight:500; text-align:center; font-size:24px!important; padding:25px; color:#fff;}
+}
+
+@media (max-width: 767px) {
+.jumbotron .title-big{padding-top:40px; padding-bottom:20px;}
+.jumbotron .title-big h1{padding:30px; line-height:50px;}
+.customer h3{padding:0px;}
+.hp_description2{padding:0px;}
+.hp_description4{padding:0px;}
+.hp_description3{padding:0px}
+.hpbg3 .infobox2 .infotext{line-height:24px; font-weight:300; text-align:center; font-size:16px!important; padding:13px; color:#fff;}
+.hpbox .boxinner{padding:30px 20px 30px;}
+.hp_description4 {line-height:35px; font-weight:300; text-align:center; font-size:20px; margin-bottom:40px; padding:0px 20px;}
+.hp_description2 {line-height:35px; font-weight:500; text-align:center; font-size:20px; margin-bottom:50px;}
+.name{font-size:16px;}
+.Cell {display:block; width:250px; padding-bottom:20px;}
+}

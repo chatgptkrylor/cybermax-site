@@ -1,0 +1,221 @@
+/* ========================================
+           MAIN SECTION STYLES - "Our Approach to Building Custom AI Models"
+           ======================================== */
+        
+        /* Main container */
+        .slick-slider {
+            position: relative;
+            width: 100%;
+            background-color: #03abf8; /* blue-500 */
+            overflow: hidden;
+        }
+
+        /* Background overlay */
+        .slick-slider .bg-overlay {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Content container */
+        .slick-slider .content-container {
+            position: relative;
+            max-width: 1536px; /* max-w-screen-2xl */
+            margin: 0 auto;
+            padding: 0rem 1rem 5rem 0rem;
+        }
+
+        /* Slider container */
+        .slick-slider .slider-wrapper {
+            position: relative;
+            padding: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .slick-slider .slider-wrapper {
+                padding: 2rem 3rem; /* md:px-8 md:py-12 */
+            }
+        }
+
+        /* ========================================
+           SLICK SLIDER CUSTOM STYLES
+           ======================================== */
+        
+        .slick-slider .slick-slider.gap-slider {
+            position: relative;
+        }
+
+        .slick-slider .slick-list {
+            overflow: hidden;
+        }
+
+        .slick-slider .slick-track {
+            display: flex !important;
+            opacity: 1;
+        }
+
+        .slick-slider .slick-slide {
+            height: inherit !important;
+            float: left;
+        }
+
+        .slick-slider .slick-slide > div {
+            height: 100%;
+        }
+
+        /* ========================================
+           CARD STYLES
+           ======================================== */
+        
+        .slick-slider .card {
+            height: 346px !important;
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+			padding:25px;
+			margin-right:25px;
+			border:1px solid #ffffff;
+			border-radius:10px;
+        }
+
+        .slick-slider .card-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            height: 100%;
+        }
+
+        /* Large number style */
+        .slick-slider .card-number2 {
+            font-size: 10rem; /* text-8xl */
+            font-weight: 700; /* font-bold */
+            user-select: none;
+            border-radius: 1rem; /* rounded-2xl */
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            opacity: 0.3;
+        }
+
+        @media (min-width: 768px) {
+            .slick-slider .card-number2 {
+                font-size: 10rem; /* md:text-9xl */
+            }
+        }
+
+        /* Card title */
+        .slick-slider .card-title {
+            font-size: 1.25rem; /* text-xl */
+            font-weight: 600; /* font-bold */
+            color: white;
+            margin-bottom: 1.25rem;
+        }
+
+        @media (min-width: 1024px) {
+            .slick-slider .card-title {
+                font-size: 3rem; /* lg:text-3xl */
+            }
+        }
+
+        /* Card description */
+        .slick-slider .card-description {
+            text-align: left;
+            font-weight: 400; /* font-normal */
+            font-size: 1.75rem; /* text-lg */
+            color: white;
+            line-height: 1.625; /* leading-relaxed */
+            overflow: hidden;
+        }
+
+        /* ========================================
+           NAVIGATION ARROWS & PAGINATION
+           ======================================== */
+        
+        .slick-slider .slider-nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .slider-arrow {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 9999px; /* rounded-full */
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .slick-slider .slider-arrow:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .slick-slider .slider-arrow i {
+            color: white;
+            font-size: 2rem;
+        }
+
+        .slick-slider .slider-counter {
+            color: white;
+            font-size: 2rem; /* text-lg */
+            font-weight: 700; /* font-bold */
+        }
+
+        .slick-slider .slider-counter .total {
+            color: white;
+            font-size: 2rem;
+            font-weight: 700;
+            opacity: 0.5;
+        }
+
+        /* ========================================
+           SPACING UTILITIES
+           ======================================== */
+        
+        .slick-slider .spacer {
+            padding: 1.25rem 0;
+        }
+
+        @media (min-width: 768px) {
+            .slick-slider .spacer {
+                padding: 1.25rem 0;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .slick-slider .spacer {
+                padding: 1.25rem 0;
+            }
+        }
+
+        /* ========================================
+           ADDITIONAL SLICK SLIDER OVERRIDES
+           ======================================== */
+        
+        .slick-slider .slick-slide {
+            width: 604px;
+            padding: 0 8px;
+        }
+
+        .slick-slider .slick-slide.slick-cloned {
+            display: block;
+        }
+
+        .slick-slider .slick-slide[aria-hidden="true"] {
+            visibility: visible;
+        }
+
+        /* Hide cloned slides if needed */
+        .slick-slider .slick-slide.slick-cloned[aria-hidden="true"] {
+            display: block;
+        }
+

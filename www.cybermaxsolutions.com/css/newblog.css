@@ -1,0 +1,116 @@
+.blog_banner_section{background: #03ABF8;
+background: linear-gradient(90deg, rgba(3, 171, 248, 1) 0%, rgba(73, 195, 151, 1) 72%, rgba(77, 196, 146, 1) 76%, rgba(87, 199, 133, 1) 86%); padding:90px 0px 70px 0px;}
+.blog_banner_section h1{text-align:left;}
+.blog_banner_section .blogdate{border-radius:8px; border:1px solid #C8C8C8; padding:5px 12px; text-align:center; font-weight:500;  width:fit-content; font-size:15px; float:left;}
+.blog_banner_section .blogtime{border-radius:8px; border:1px solid #C8C8C8; padding:5px 12px; text-align:center; font-weight:500;  width:fit-content; font-size:15px; float:left;}
+
+.img-border {
+  border: 1px solid #C8C8C8; /* Width, Style, Color */
+  border-radius: 5px;    /* Optional: Rounds the corners */
+  padding:5px;
+}
+
+.sidebar {
+  width: 20%;
+  /*height: 25vh;*/
+  min-height: 200px;
+  /*overflow: auto;*/
+  position: sticky;
+  top: 15%;
+}
+
+.main {
+  width: 75%;
+  /*height: 200vh;*/
+  min-height: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main,
+.sidebar {color:#222; padding:15px;}
+.wrapper {display:flex; justify-content:space-between;}
+.bottom {justify-self:bottom;}
+
+.toc-link {
+  text-decoration: none;
+  color: #484848;
+  display: block;
+  font-size:14px; padding:7px;
+}
+.toc-link::before {
+  content: "\f105"; /* Unicode for fa-angle-right */
+  font-family: "Font Awesome 5 Free"; /* Adjust based on your version */
+  font-weight: 900; /* Required for 'fas' (solid) style */
+  position: absolute;
+  left: 0;
+  color: #484848; /* Optional: change icon color */
+}
+
+/* Active Class for Highlight */
+.toc-link.active {
+  color: #03abf8!Important;
+  font-weight: 600;
+  /*border-left: 2px solid #03abf8;*/
+}
+#newblog p{font-weight:400;}
+#newblog .table_content_head{font-weight:600px!important;}
+/*#newblog .sidebar a{color:#000000; font-size:14px; padding-bottom:7px;}*/
+#newblog h2{text-align:left; padding-bottom:10px; font-size:38px; line-height:48px; font-weight:600;}
+#newblog h3{margin-bottom:10px; margin-top:20px;}
+
+#newblog p{font-size:17px;}
+#newblog li{padding-bottom:10px; font-size:17px; font-weight:400;}
+
+#newblog td{font-size:17px; font-weight:400;}
+#newblog .accordion{width:100%;}
+#newblog .bordered-content {border: 2px solid #03abf8; border-radius:15px; padding:30px; margin:15px 0; color:#1f2937;}
+#newblog .bordered-content li{padding-bottom:10px; font-size:17px; font-weight:400; background-image: url(../images/greydot.png); background-repeat: no-repeat; display: block; padding-left: 25px; background-position: 0px 8px; text-align: left;}
+#newblog li{padding-bottom:10px; font-size:17px; font-weight:400; background-image: url(../images/blackdot.png); background-repeat: no-repeat; display: block; padding-left: 25px; background-position: 0px 8px; text-align: left;}
+
+#newblog .sidebar li{padding-bottom:0; background:none; padding-left:0;}
+
+#newblog .table-responsive th{background-color:#03abf8; color:#ffffff; vertical-align: middle;}
+.blankbox{height:200px;}
+#newblog .table-bordered{border:3px solid #03abf8;}
+
+#newblog section {margin-top: 0px; margin-bottom: 0px;}
+
+#target-section {
+    scroll-margin-top: 80px; /* Set this to the height of your fixed header */
+}
+
+
+/* Small mobile styles */
+@media (max-width: 480px) {
+    .main {
+        width:100%;
+		position:static;
+    }
+    
+    .sidebar {
+        width:100%;
+		position:static;
+    }
+}
+
+/* Mobile Viewport */
+@media (max-width: 768px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column; /* Stack vertically */
+  }
+
+  .sidebar {
+    order: -1; /* Puts the sidebar on top */
+  }
+
+  .main {
+    order: 1; /* Puts content below sidebar */
+  }
+}
+
+:target {
+    scroll-margin-top: 50px; /* Adjust based on navbar height */
+}
+

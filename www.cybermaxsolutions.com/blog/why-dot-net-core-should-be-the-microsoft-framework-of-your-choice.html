@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Why .NET Core should be the Microsoft framework of your choice.</title>
+<meta name="description" content="We discuss why you should seriously consider migrating to .NET Core." />
+<meta name="KEYWORDS" content=".NET Core, ASP.NET Core, MVC, WEB API,.NET Framework." />
+<meta name="canonical" content="https://www.cybermaxsolutions.com/blog/why-dot-net-core-should-be-the-microsoft-framework-of-your-choice" />
+
+<!-- Facebook -->
+<meta property="og:title" content="Why .NET Core should be the Microsoft framework of your choice." />
+<meta property="og:url" content="https://www.cybermaxsolutions.com/blog/why-dot-net-core-should-be-the-microsoft-framework-of-your-choice" />
+<meta property="og:site_name" content="Cybermax Solutions" />
+<meta property="og:type" content="article" />
+<meta property="og:description" content="We discuss why you should seriously consider migrating to .NET Core." />
+<meta property="og:image" content="https://www.cybermaxsolutions.com/images/blog/blog-title07-1200.jpg" />
+<meta property="article:publisher" content="https://www.facebook.com/cybermaxsolutions" />
+<meta property="article:published_time" content="2018-07-16T10:30:21+00:00" />
+<meta property="article:modified_time" content="2018-07-16T10:30:21+00:00" />
+<meta property="og:updated_time" content="2018-07-16T10:30:21+00:00" />
+
+<!-- Twitter -->
+<meta name="twitter:title" content="Why .NET Core should be the Microsoft framework of your choice" />
+<meta name="twitter:description" content="We discuss why you should seriously consider migrating to .NET Core." />
+<meta name="twitter:image:src" content="https://www.cybermaxsolutions.com/images/blog/blog-title07-1200.jpg" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/ld+json">{
+  "@context": "http://www.schema.org",
+  "@type": "Organization",
+  "name": "Cybermax Solutions India",
+  "url": "https://www.cybermaxsolutions.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "India",
+    "addressLocality": "Mumbai",
+    "addressRegion": "Maharashtra",
+    "postalCode": "400079",
+    "streetAddress": "B-17, Kailas Industrial Complex, Hiranandani Link Road,  Parksite, Vikhroli"
+  },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "19.113048",
+      "longitude": "72.918048"
+    },
+    "telephone": "098215 55889"
+}
+</script>
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"><
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+
+<link rel="stylesheet" href="../dist/css/bootstrap.min.css">
+<script src="../dist/js/jquery.min.js"></script>
+<script  async  src="../dist/js/jquery-ui.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+<script async  type="text/javascript" src ="../dist/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	/*
+	$(document).ready(function() {
+		equalizeHeight($(".boxwrapper > .boxmain"));
+	});
+	function equalizeHeight(object) {
+		var maxHeight = 0;
+		// alert($(".container > .feature").css("height"));
+		$(object).each(function(index){
+			if(maxHeight < $(this).height()) {
+				maxHeight = $(this).height();
+			}
+		});
+		$(object).height(maxHeight + "px");
+	}
+	*/
+</script>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+<link type="text/css" rel="stylesheet" href="../css/main.css" media="all">
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600|Open+Sans:300italic,400italic,600italic,700italic,700,300,600,400|Roboto:300,400,700" rel="stylesheet" type="text/css">
+<link rel="icon" href="../images/favicon.png">
+<link href="../images/apple-icon.png" rel="apple-touch-icon" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2070020-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-2070020-1');
+</script>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="../css/jquery-social-share-bar.css">
+<script type="text/javascript" src="../js/jquery-social-share-bar.js"></script>
+<link rel="stylesheet" href="../css/ace-responsive-menu.css" type="text/css">
+<!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> -->
+    <script src="../js/ace-responsive-menu.js" type="text/javascript"></script>
+	
+	<!--Plugin Initialization-->
+     <script type="text/javascript">
+         $(document).ready(function () {
+			 var minMobileWidth = 1024; // For mobile/tablet/ipad view
+             $("#respMenu").aceResponsiveMenu({
+                 resizeWidth: '768', // Set the same in Media query       
+                 animationSpeed: 'fast', //slow, medium, fast
+                 accoridonExpAll: false //Expands all the accordion menu on click
+             });
+			 
+			 $(".cybermaxmenu ul.ace-responsive-menu > li > a").click(function() {
+				 if($(document).width() > minMobileWidth || $(this).next("ul.sub-menu").length == 0) {
+					 return true;
+				 } else if($(document).width() <= 768) {
+					 if($(this).next("ul.sub-menu").css("display") == "none") {
+						$("ul.sub-menu").slideUp();
+					 }
+					 $(this).next("ul.sub-menu").slideToggle();
+					 return false;
+				 } else {
+					 return false;
+				 }
+			 });
+			 
+			// $(".ace-responsive-menu > li > a[href=" + location.href + "]").addClass("active-menu");
+			$(".ace-responsive-menu > li > a").removeClass("active");
+			$(".ace-responsive-menu > li").each(function( index ) {
+				// alert($(this).children("a[class=dropdown-toggle]").prop("href"));
+				if($(this).children("a").prop("href") == location.href) {
+					$(this).children("a").addClass("active-menu");
+				}
+			});
+			$(".ace-responsive-menu > li > ul.sub-menu > li").each(function( index ) {
+				// alert($(this).children("a[class=dropdown-toggle]").prop("href"));
+				if($(this).children("a").prop("href") == location.href) {
+					$(this).parent("ul.sub-menu").parent("li").children("a").addClass("active-menu");
+					$(this).children("a").addClass("active-menu-item");
+				}
+			});
+			 
+			// Page Scroll Start
+			
+			function showHideMenuBar(scroll_start) {
+				var startchange = $('div.title');
+				var offset = startchange.offset();
+				var scroll = false;
+				var speed = 400; // Change the speed of the animation (in milliseconds) by changing this value
+				// console.log(scroll_start);
+				if (scroll_start > 440 && !scroll) { // If user has already scrolled down. Otherwise this event will keep on triggering even when the user scrolls down further.
+					// $( "#share-bar" ).css({"position":"fixed", "top":"205px"});
+					$( "#share-bar" ).addClass("share-bar-float");
+					scroll = true;
+				} else { // User is still at the top of the page
+					// $( "#share-bar" ).css({ "position":"relative", "top":"100px"});
+					$( "#share-bar" ).removeClass("share-bar-float");
+					scroll = false;
+				}
+			}
+			showHideMenuBar($(this).scrollTop());
+			$(document).scroll(function () {
+				showHideMenuBar($(this).scrollTop());
+			});
+			
+			// Page Scroll End
+         });
+	</script>
+<div>    	
+    <!-- Ace Responsive Menu -->
+    <nav class="scroll_down">
+        <!-- Menu Toggle btn-->
+        <div class="menu-toggle">
+            <h3><a href="https://www.cybermaxsolutions.com/index.html"><img src="../images/logo_mobile.png" class="pb5" alt="Cybermax Solutions" title="Cybermax Solutions" /></a></h3>
+            <button type="button" id="menu-btn">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- Responsive Menu Structure-->
+        <!--Note: declare the Menu style in the data-menu-style="horizontal" (options: horizontal, vertical, accordion) -->
+		<div class="cybermaxlogo"><a href="https://www.cybermaxsolutions.com/index.html"><img class="color-image" src="../images/logo.png" alt="Cybermax Solutions" title="Cybermax Solutions" /><img class="white-image" src="../images/logo2.png" alt="Cybermax Solutions" title="Cybermax Solutions" /></a></div>
+        <div class="cybermaxmenu"><ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">              
+            <li>
+                <a href="https://www.cybermaxsolutions.com/aboutus.html">
+                    <span class="title">Our Profile</span>
+
+                </a>
+                <!-- Level Two-->
+                <ul>
+                    <li>
+                        <a href="https://www.cybermaxsolutions.com/aboutus.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="https://www.cybermaxsolutions.com/development-methodology.html">Development Methodology</a>
+                    </li>
+					<li>
+                        <a href="https://www.cybermaxsolutions.com/clients.html">Clientele</a>
+                    </li>
+                </ul>
+            </li>
+			
+			<li>
+                <a class="" href="javascript:void(0);">
+                    <span class="title">AI Solutions</span>
+
+                </a>
+                <ul>
+					<li><a href="https://www.cybermaxsolutions.com/ai-consulting-services.html">AI Consulting Services</a></li>
+					<li><a href="https://www.cybermaxsolutions.com/ai-chatbot-development.html">AI Chatbot Development</a></li>
+					<li><a href="https://www.cybermaxsolutions.com/generative-ai-integration.html">Generative AI Solutions</a></li>
+					<li><a href="https://www.cybermaxsolutions.com/llm-development-services.html">LLM Development</a></li>
+				  </ul>
+            </li>
+
+            <li>
+                <a href="https://www.cybermaxsolutions.com/services.html">
+                    <span class="title">Services & Expertise</span>
+                </a>
+                <!-- Level Two-->
+                <ul>
+					<li><a href="https://www.cybermaxsolutions.com/custom-software-development.html">Custom Software Development</a></li>
+					<li><a href="https://www.cybermaxsolutions.com/web-application-development.html">Web App Development</a></li>
+					<li><a href="https://www.cybermaxsolutions.com/application-integration.html">Application Integration</a></li>
+                    <li><a href="https://www.cybermaxsolutions.com/software-outsourcing.html">Software Outsourcing</a></li>
+					<li><a href="https://www.cybermaxsolutions.com/cloud-solutions.html">Cloud Solutions</a></li>
+					<li><a href="https://www.cybermaxsolutions.com/devops-consulting-services.html">DevOps Consulting</a></li>
+                    <li><a href="https://www.cybermaxsolutions.com/payment-gateway-integration.html">Payment Gateway Integration</a></li>
+				  </ul>
+            </li>
+            <li>
+                <a class="" href="https://www.cybermaxsolutions.com/blog/technologies">
+                    <span class="title">Technologies</span>
+
+                </a>
+                <ul>
+					<li><a href="https://www.cybermaxsolutions.com/dotnet-development.html">.NET</a></li>
+					<li><a href="https://www.cybermaxsolutions.com/java-development.html">Java</a></li>
+					<li><a href="https://www.cybermaxsolutions.com/php-development.html">PHP</a></li>
+					<li><a href="https://www.cybermaxsolutions.com/vuejs-development.html">Vue.js</a></li>
+					<li><a href="https://www.cybermaxsolutions.com/backend-development.html">Backend</a></li>
+				  </ul>
+            </li>            
+            <li class="last ">
+                <a href="https://www.cybermaxsolutions.com/contact.html" class="contactus">
+                    <span class="title">Contact Us</span>
+                </a>
+            </li>
+        </ul>
+		</div>
+    </nav>
+    <!-- End of Responsive Menu -->
+    </div>
+    
+    
+<style>
+nav {width:100%;  margin:0px auto;	position:fixed;	right:0; left:0; z-index:1030; top:0;}
+.cybermaxlogo{float:left; margin-left:90px; margin-right:35px; padding-bottom:5px; padding-top:5px;}
+nav .cybermaxlogo > a > img.color-image{display:none; -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out;}
+nav .cybermaxlogo > a > img.white-image{display:block; -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out;}
+.cybermaxmenu {float:right; margin-top:10px; margin-right:90px;}
+.ace-responsive-menu > li > a:not(.contactus)::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #FFF;
+    display: block;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+	margin-top:7px;
+}
+.ace-responsive-menu > li:hover > a::after, .ace-responsive-menu > li > a.active-menu::after {width: 100%;}
+.contactus{border:1px #fff solid !important; padding:7px 20px!important; margin-top:12px!important;  border-radius:2px; width: 130px;}
+.contactus:hover{border:1px #fff solid; border-radius:2px; background-color:#fff!important; color:#fff!important;}
+.contactus:hover > span{color:#000;}
+nav, nav ul.ace-responsive-menu > li > a.contactus, nav ul.ace-responsive-menu > li > a > span { /* Animations */
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;
+}
+a.active-menu-item { color: #63c29d !important; }
+
+/* Page Scrolling CSS Start */
+
+nav.scroll_down {background: #fff !important; box-shadow: 0 -10px 7px 7px #000 !important;}
+	
+nav.scroll_down ul.ace-responsive-menu > li > a {
+	color: #333 !important;
+}
+nav.scroll_down .ace-responsive-menu > li:hover > a:not(.contactus)::after, nav.scroll_down .ace-responsive-menu > li > a.active-menu::after {background: #63c29d;}
+nav.scroll_down .ace-responsive-menu > li > a.active-menu > span {color: #63c29d;}
+nav.scroll_down .contactus{border:1px #63c29d solid !important;  margin-top:12px!important; border-radius:2px;}
+nav.scroll_down .contactus > span{color:#63c29d;}
+nav.scroll_down .contactus:hover{border:1px #63c29d solid; border-radius:2px; background-color:#63c29d!important;}
+nav.scroll_down .contactus:hover > span{color:#fff!important;}
+nav.scroll_down .cybermaxlogo > a > img.color-image{display:block;}
+nav.scroll_down .cybermaxlogo > a > img.white-image{display:none;}
+
+/* Page Scrolling CSS End */
+
+@media screen and (max-width: 1024px) {
+	.cybermaxlogo{float:left; margin-left:25px; margin-right:20px;}
+	.cybermaxmenu {float:right; margin-top:10px; margin-right:15px;}
+	.ace-responsive-menu > li > a {padding:18px 20px 0px 0px;}
+}
+
+@media screen and (max-width: 768px) {
+	.cybermaxlogo{display:none;}
+	.cybermaxmenu {float:right; margin-top:0px; margin-right:0px; width:100%; border-top:1px solid #CCC;}
+	nav .ace-responsive-menu > li:hover > a:not(.contactus)::after, nav .ace-responsive-menu > li > a.active-menu::after {width:0;}
+	nav.scroll_down .ace-responsive-menu > li > a.active-menu > span {color: #333;}
+	.contactus{border:1px #63c29d solid !important; color:63c29d;}
+
+	/* For displaying selected menu Start */
+	/* a.active-menu~ul.sub-menu { position:relative; display:block; background:#eee; margin:0 -20px 20px; padding:0 15px; } */
+	ul.sub-menu { position:relative!important; background:#eee!important; margin:0 -20px 20px!important; padding:0 15px; }
+	a.active-menu~ul.sub-menu { display:block; }
+	nav .ace-responsive-menu > li a~ul.sub-menu::after { content:""; position:absolute; display:block; width:0; height:0; left:17px; top:-8px; border-style:solid; border-width:0 10px 8px; border-color:transparent transparent #eee; z-index:1; }
+	/* For displaying selected menu End */
+}
+</style>
+<!-- SOCIAL SHARE FILES -->
+<!-- <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5b45d6c2e1ceeb001b842b6b&product=social-ab' async='async'></script> -->
+<!-- SOCIAL SHARE FILES -->
+<!--<script>
+$(document).ready(function() {
+	$("div#share-bar").remove();
+	$("div.jumbotron").after("<div id=\"share-bar\" ></div>");
+	$('#share-bar').share();
+});
+</script>-->
+
+<div class="jumbotron text-center">
+  <div class="title" style="background-image:url(../images/blog/blog-title07.jpg)"> </div>
+</div>
+<div class="container mb0 blog">
+  <div class="row">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-10">
+      <h1>Why .NET Core should be the Microsoft framework of your choice.</h1>
+      <div class="blog-date">On July 16 2018, by Krishnan V</div>
+      <div class="blog-content">
+        <p><img src="../images/blog/010.png" class="img-responsive pl10" align="right" />Given the plethora of technologies that Microsoft makes available for developers, it becomes a somewhat daunting task for you to choose the right set of <a href="https://www.cybermaxsolutions.com/technologies.html" class="blue">technologies</a> to develop your project in. For example, consider the following, you started with employing <a href="https://www.cybermaxsolutions.com/dotnet-development.html" class="blue">.NET</a> Web forms and then migrated to MVC which was followed Web <a href="https://www.cybermaxsolutions.com/application-integration.html" class="blue">API</a>, you also dabbled in WCF for a bit. It does look like we are somewhat spoilt for choices when it comes to picking a development stack of our choice. </p>
+        <p>But now you have a more recent player on the block  .NET core, what's this all about?  should we be targeting this instead of the classic .NET framework, very often we end up selecting something that might a have high learning curve and low productivity or something that might have a low learning curve but won't be that scalable and lastly there is also the dilemma of using some technology that might be rendered obsolete pretty soon. This article attempts to shed light on some of these questions. </p>
+       
+        <h2>Buzzwords: .NET Core & ASP.NET Core?</h2>
+        <p align="center"><img src="../images/blog/008.jpg" class="img-responsive" /></p>
+        <p>.NET Core is a high-performance open source development framework that is completely free and is cross-platform compatible, which means it can be run on MacOS or Linux in addition to Windows. It has been re-written from the ground up and is much faster, more importantly, it also unifies the previous MVC & ASP.NET into one single entity.</p>  
+        <p>ASP.NET Core is a cross-platform collection of libraries that form a framework for building web applications. It can run on .NET Core as well as the regular .NET framework.</p>      
+        <p>So you basically your ASP.NET Core applications can target either framework, the advantage is that for the first time you can run your .NET code natively on Linux & MacOS, so basically, this is no different from Java.</p>
+
+<div class="pb30"></div>
+<h2>.NET Core benefits</h2>
+<p>.NET Core offers a lot of benefits over the regular .NET framework. Here are some of them explained in brief</p>
+<ul class="bullet">
+<li><b>Performance benefits :</b> .NET has been written up from the ground up is more optimized and scalable and gives you better performance.</li>
+<li><b> Platform independent : </b>You can run your .NET core code on Linux or MacOS in addition to Windows, this is a great flexibility as it means you don&rsquo;t need expensive windows machines to run your projects.</li>
+  <li><b> Running multiple versions side by side : </b>You can run multiple .NET versions on the same machine seamlessly, the .NET core is built to make that an easier task.</li>
+  <li><b>Kestrel &amp; Docker :</b> .NET Core comes with its own compact but efficient cross-platform web server called &nbsp;Kestrel, you could either use that to host your project or you could simply set it up to work in a &nbsp;Docker container.</li>
+  <li><b>Microservices :</b> The microservices architecture has become an important way for companies to engineer decentralized applications that are robust and responsive. .NET Core should be your natural choice for development using microservices.</li>
+</ul>
+         
+<div class="pb30"></div>
+<h2>.NET Core disadvantages</h2>
+      <ul class="bullet">
+  <li> <b>Incompatible third-party components :</b> Many or some of the sub-systems in your project bundle might not work on .NET Core, this is going to be the case if you are using third-party components that haven&rsquo;t been ported. </li>
+  <li> <b>Visual Studio availability for Linux :</b> Although it is cross-platform compatible, the best development tool Visual Studio has not been ported onto Linux environments, so if you are using Linux for development then you might lose out on using a good IDE like Visual Studio. </li>
+  <li><b> Missing features :  </b>If you are using ASP.NET web-forms or windows-forms then this will not work for you as .NET Core doesn&rsquo;t support webforms nor does it have any such plans, they are however going to support windows forms in .NET Core 3.0. </li>
+  <li><b> WCF support lacking :  </b>.NET Core doesn&rsquo;t support WCF, so if you need to develop to develop REST-based services then you will need to use WEB API instead. </li>
+  <li><b> Windows-specific API support : </b>If you need to access Windows-specific API like WMI etc then .NET Core may not be the best fit for you. </li>
+</ul>
+    
+ <div class="pb30"></div>
+<h2>Conclusion</h2>
+<p align="center"><img src="../images/blog/009.jpg" class="img-responsive" /></p>
+        <p>.NET core being cross-platform opens up new doors for its adoption worldwide.</p>
+        <p>It can be self-hosted in its own container or can even use docker, this is a great advantage as far as hosting is concerned. Microsoft has already announced their plans for .NET Core 3. The salient features of .NET Core 3 include support for desktop applications for Windows, specifically windows-forms and windows presentation framework and in addition to this it also adds the ability to ship the framework as part of your application. .NET Core is a stable technology that's here to stay, it being Open Source is only driving more developer interest in it. Given the sturdiness and performance benefits, it is very likely that this might be the future of .NET in general and it makes sense in embracing it sooner than later. Do <a href="https://www.cybermaxsolutions.com/contact.html" class="blue">write</a> to us in case you have any queries about migration to .NET core.</p>
+
+
+
+
+
+<div class="pb30"></div>
+<div class="blogger-wrap">
+	<div class="avatar"><img src="../images/blog/kishore.jpg" /></div>
+    <div class="authorname">Krishnan Ventakeshwaran</div>
+    <p class="authortxt">Krishnan Ventakeshwaran is the technical head of Cybermax Solutions, a leading <a href="https://www.cybermaxsolutions.com/index.html" class="blue">Custom software development company</a> specialized in web development and payment gateway integration. Exceptional proficiency and ability to comprehend and rapidly deploy enterprise products that help our clients succeed. </p>
+</div>
+<div class="pb30"></div>
+      </div>
+    </div>
+    <div class="col-lg-1"></div>
+  </div>
+</div>
+
+  <!----------- Footer ------------>
+  <footer class="footer">
+  <div class="footer-wrap">
+    <div class="footer-row bb">
+    
+      <div class="footer-col2">
+         <a href="https://www.cybermaxsolutions.com/index.html"> <img src="../images/logo_footer.png" alt="Cybermax Solutions" title="Cybermax Solutions"> </a> 
+      </div>
+      
+      <!--<div class="footer-col2">
+            	<div class="fl pr10 pinwidth1"><img src="../images/phone.png" width="40" height="40" /></div>
+                <div class="fl pinwidth2"><a itemprop="telephone" href="tel:+91 22 2518 6314">+91 22 2518 6314</a><br />
+                <a itemprop="telephone" href="tel:+91 22 2518 6315">+91 22 2518 6315</a></div>
+      </div>-->
+      
+      <div class="footer-col2">
+        	<div class="fl pr10 pinwidth1"><!--<a href="https://goo.gl/maps/G4yYSowBgp52" target="_blank" rel="nofollow">--><a href="javascript:void(0)"><img src="../images/pin.png" width="40" height="40" /></a></div>
+            <div class="fl pinwidth2">7B, Sindhu Baug, Opp Axis Bank, Tilak Road, Ghatkopar (East), Mumbai – 400077, India</div>
+      </div>
+      
+      <div class="footer-col2">
+            <div class="fl pr10 pinwidth1"><img src="../images/mail.png" width="40" height="40" /></div>
+            <div class="fl pinwidth2"><a itemprop="email" href="mailto:marketing@cybermaxsolutions.com">marketing@cybermaxsolutions.com</a></div>
+      </div>
+    </div> 
+ 
+  </div>
+<div style="clear: both;"></div>
+<div class="footer-wrap footerpart2">
+  <div class="footer-row mbcontent">
+		<div class="footer-col">
+			<div class="head"><a href="https://www.cybermaxsolutions.com/blog.html">AI Solutions</a></div>
+				<div class="flinkpb"><a href="https://www.cybermaxsolutions.com/ai-consulting-services.html">AI Consulting Services</a></div>
+				<div class="flinkpb"><a href="https://www.cybermaxsolutions.com/ai-chatbot-development.html">AI Chatbot Development</a></div>
+				<div class="flinkpb"><a href="https://www.cybermaxsolutions.com/generative-ai-integration.html">Generative AI Solutions</a></div>
+				<div class="flinkpb"><a href="https://www.cybermaxsolutions.com/llm-development-services.html">LLM Development</a></div>        
+		</div>
+        <div class="footer-col"> 
+			<div class="head">Services & Expertise</div>
+        	<div class="flinkpb"><a href="https://www.cybermaxsolutions.com/custom-software-development.html">Custom Software Development</a></div>
+            <div class="flinkpb"><a href="https://www.cybermaxsolutions.com/web-application-development.html">Web Application Development</a></div>
+            <div class="flinkpb"><a href="https://www.cybermaxsolutions.com/application-integration.html">Application Integration</a></div>
+            <div class="flinkpb"><a href="https://www.cybermaxsolutions.com/software-outsourcing.html">Software Outsourcing</a></div>
+            <div class="flinkpb"><a href="https://www.cybermaxsolutions.com/cloud-solutions.html">Cloud Solutions</a></div>
+			<div class="flinkpb"><a href="https://www.cybermaxsolutions.com/devops-consulting-services.html">DevOps Consulting</a></div>
+            <div class="flinkpb"><a href="https://www.cybermaxsolutions.com/payment-gateway-integration.html">Payment Gateway Integration</a></div>
+        </div>        
+        <div class="footer-col">
+			<div class="head">Technologies </div>
+        	<div class="flinkpb"><a href="https://www.cybermaxsolutions.com/dotnet-development.html">.NET</a></div>
+            <div class="flinkpb"><a href="https://www.cybermaxsolutions.com/java-development.html">Java</a></div>
+            <div class="flinkpb"><a href="https://www.cybermaxsolutions.com/php-development.html">PHP</a></div>
+			<div class="flinkpb"><a href="https://www.cybermaxsolutions.com/vuejs-development.html">Vue.js</a></div>
+            <div class="flinkpb"><a href="https://www.cybermaxsolutions.com/backend-development.html">Backend</a></div>
+        </div>
+  		<div class="footer-col">
+			<div class="head">Our Profile</div>
+        	<div class="flinkpb"><a href="https://www.cybermaxsolutions.com/aboutus.html">About Us</a></div>
+            <div class="flinkpb"><a href="https://www.cybermaxsolutions.com/development-methodology.html">Development Methodology</a></div>
+            <div class="flinkpb"><a href="https://www.cybermaxsolutions.com/clients.html">Clientele</a></div>
+			<div class="flinkpb"><a href="https://www.cybermaxsolutions.com/blog.html">Blog</a></div>
+            <div class="flinkpb"><a href="../sitemap.xml" target="_blank">Sitemap</a></div>
+        </div>
+        <div class="footer-col pl20">
+   	  <div class="head">Follow us on</div>
+      	<div class="clearfix pb30">
+            <div class="fl pr20"><a href="https://www.facebook.com/cybermaxsolutions" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></div>
+            <div class="fl pr20"><a href="https://www.linkedin.com/company/cybermaxsolutions/" target="_blank"><i class="fab fa-linkedin fa-2x"></i> </a></div>
+            <!--<div class="fl pr20"><a href="https://plus.google.com/u/0/+CybermaxSolutions" target="_blank"><i class="fab fa-google-plus-square fa-2x"></i></a></div>-->
+        </div>
+        	<div class="copy">@ 2026 Cybermax Solutions.<br />All rights reserved.</div>
+      </div>
+  </div>
+</div>
+<div style="clear: both;"></div>
+<div class="copy2">@ 2026 Cybermax Solutions.<br />All rights reserved.</div>
+<br/>
+</footer>
+
+
+
+<style>
+/* FOOTER START */
+.footer {min-height:255px; background:#484848; color:#BEBEBE; font-size:13px;}
+.footer-wrap {max-width:1140px; margin:auto;}
+.footer .footer-wrap .footer-row{width:100%; float:left;}
+.footer .footer-wrap .footer-row .footer-col{padding-top:30px;  padding-bottom:0; float:left; width:20%; min-height:120px; padding-right: 20px;}
+.footer .footer-wrap .footer-row .footer-col .head{margin-top:12px; margin-bottom:19px; font-weight:600; font-size:16px; line-height:16px; text-transform:uppercase; color:#fff;}
+.footer .footer-wrap .footer-row .footer-col .head a{margin-top:12px; margin-bottom:19px; font-weight:600; font-size:16px; line-height:16px; text-transform:uppercase; color:#fff;}
+.footer .footer-wrap .footer-row .footer-col .date{color:#868686;}
+.footer .footer-wrap .footer-row .footer-col .pinwidth1{width:15%;}
+.footer .footer-wrap .footer-row .footer-col .pinwidth2{width:85%;}
+
+.footer .footer-wrap .footer-row .footer-col2{padding-top:30px;  padding-bottom:0; float:left; width:25%; min-height:120px;}
+.footer .footer-wrap .footer-row .footer-col2 .head{margin-top:12px; margin-bottom:19px; font-weight:600; font-size:16px; line-height:16px; text-transform:uppercase; color:#fff;}
+.footer .footer-wrap .footer-row .footer-col2 .head a{margin-top:12px; margin-bottom:19px; font-weight:600; font-size:16px; line-height:16px; text-transform:uppercase; color:#fff;}
+.footer .footer-wrap .footer-row .footer-col2 .date{color:#868686;}
+.footer .footer-wrap .footer-row .footer-col2 .pinwidth1{width:15%;}
+.footer .footer-wrap .footer-row .footer-col2 .pinwidth2{width:85%;}
+
+.footer .footer-wrap a{color:#cdcdcd; font-size:13px; text-decoration:none; color:#BEBEBE;}
+.footer .footer-wrap a:hover{color:#fff;}
+.footer .footer-wrap .flinkpb{padding-bottom:10px;}
+.footer .footer-wrap .copy{color:#A8A8A8;}
+.footer .copy2{color:#A8A8A8; display:none;}
+
+.footer .footer-wrap .bb{border-bottom:1px solid #707070;}
+
+
+@media (max-width:1024px) {
+.footer {height:100%;}
+.footer-wrap {padding:20px 40px;}
+.footer .footer-wrap .footer-row .footer-col{padding-top:15px;  padding-bottom:0; width:100%; min-height:auto!important;}
+.footer .footer-wrap .footer-row .footer-col .pinwidth1{width:5%;}
+.footer .footer-wrap .footer-row .footer-col .pinwidth2{width:95%;}	
+
+.footer .footer-wrap .footer-row .footer-col2{padding-top:15px;  padding-bottom:0; width:100%; min-height:auto!important;}
+.footer .footer-wrap .footer-row .footer-col2 .pinwidth1{width:5%;}
+.footer .footer-wrap .footer-row .footer-col2 .pinwidth2{width:95%;}	
+
+.footer .footer-wrap .bb{border-bottom:1px solid #979797; padding-bottom:25px;}
+.footerpart2{display:none;}
+
+.footer .copy2{display:block; text-align:center; padding:10px;}
+}
+
+@media (max-width:768px) {
+.footer {height:100%;}
+.footer-wrap {padding:20px 40px;}
+.footer .footer-wrap .footer-row .footer-col{padding-top:15px;  padding-bottom:0; width:100%; min-height:auto!important;}
+.footer .footer-wrap .footer-row .footer-col .pinwidth1{width:7%;}
+.footer .footer-wrap .footer-row .footer-col .pinwidth2{width:93%; padding-top:10px;}	
+
+.footer .footer-wrap .footer-row .footer-col2{padding-top:15px;  padding-bottom:0; width:100%; min-height:auto!important;}
+.footer .footer-wrap .footer-row .footer-col2 .pinwidth1{width:7%;}
+.footer .footer-wrap .footer-row .footer-col2 .pinwidth2{width:93%; padding-top:10px;}	
+
+.footer .footer-wrap .bb{border-bottom:1px solid #979797; padding-bottom:25px;}
+.footer .footer-wrap .mbcontent{text-align:center;}
+.footerpart2{display:none;}
+}
+
+@media (max-width:480px) {
+.footer {height:100%;}
+.footer-wrap {padding:20px 40px;}
+.footer .footer-wrap .footer-row .footer-col{padding-top:15px;  padding-bottom:0; width:100%; min-height:auto!important;}
+.footer .footer-wrap .footer-row .footer-col .pinwidth1{width:15%;}
+.footer .footer-wrap .footer-row .footer-col .pinwidth2{width:85%; padding-top:10px;}	
+
+.footer .footer-wrap .footer-row .footer-col2{padding-top:15px;  padding-bottom:0; width:100%; min-height:auto!important;}
+.footer .footer-wrap .footer-row .footer-col2 .pinwidth1{width:15%;}
+.footer .footer-wrap .footer-row .footer-col2 .pinwidth2{width:85%; padding-top:10px;}	
+
+
+.footer .footer-wrap .bb{border-bottom:1px solid #979797; padding-bottom:25px;}
+.footer .footer-wrap .mbcontent{text-align:center;}
+.footerpart2{display:none;}
+}
+
+/* FOOTER END */
+</style></body>
+</html>
